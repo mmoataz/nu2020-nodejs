@@ -43,7 +43,21 @@ var part = allfriends.slice(1,4); // taking elements from index 1 to 3.
 console.log(part.toString());
 var part2 = allfriends.slice(-6,-1); // it works with negative indexing
 console.log(part2.toString());
-
+// Searching for an element in an array => indexOf() & lastIndexOf()
+var f = ["Mohab","Amr", "Hussam", "Mohamed","Raafat","Omar", "Amir"];
+var special = f.indexOf("Amr"); // Searching from the first index to the end
+console.log(special);
+console.log(f[special]);
+var f2 = f.lastIndexOf("Omar"); // Searching from the last index to the first index
+console.log(f2);
+console.log(f[f2]);
+var special1 = f.indexOf("Amr",2);// Searching from index 2 to the end
+console.log(special1);
+console.log(f[special1]);
+var f22 = f.lastIndexOf("Omar",4); // Searching from index 4 to the first index in the array
+console.log(f22);
+console.log(f[f22]);
+// special 1 and f22 gives -1 and undefined because they start searching after the index
 
 
 
